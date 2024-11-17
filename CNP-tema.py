@@ -104,11 +104,6 @@ def analizeaza_cautare(cnp_nume_list, distributie_hash, numar_sloturi=1000):
     return media_iteratii, min_iteratii, max_iteratii
 
 def prezentare_rezultate(media_iteratii, min_iteratii, max_iteratii):
-    print("\n--- Material de prezentare ---")
-    print("Algoritmul a generat 1.000.000 de CNP-uri valide, distribuția pe județe fiind conformă cu datele de populație națională.")
-    print("Fiecărui CNP i-a fost asociat un nume generat aleator dintr-un dicționar de nume.")
-    print("Pentru distribuția CNP-urilor s-a utilizat un algoritm de hashing FNV-1a.")
-    print("Din setul generat, au fost căutate aleatoriu 1.000 de CNP-uri.")
     print(f"Media numărului de iterații pentru regăsirea CNP-urilor: {media_iteratii:.2f}")
     print(f"Numărul minim de iterații necesare: {min_iteratii}")
     print(f"Numărul maxim de iterații necesare: {max_iteratii}")
